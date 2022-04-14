@@ -1,0 +1,15 @@
+#pp1 {font:oblique
+16px/2em "Verdana";
+text-align: justify;
+text-indent: 5.25px;
+}
+#pp2 {text-decoration: underline;
+10px/1em "Comic Sans MS";
+text-align: center;
+text-indent: 0;
+}
+#pp3 {font-weight: bold; 
+16px/2em "Arial";
+text-align: right;
+text-indent: -5.25px;
+}
