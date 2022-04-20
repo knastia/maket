@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Гіпертекстовийдокумент</title>
+<meta charset=UTF-8">
+<body onload="alert('документ загружено')" 
+onunload="alert('розпочато вигруження документа')">
+<b>onclick</b>
+<p><textarea name="area1" cols="20" rows="5" 
+onclick="alert('клікнули мишкою в полі')"></textarea></p>
+<b>ondblclick</b>
+<p><textarea name="area2" cols="20" rows="5"
+ ondblclick="alert('клікнули двічі мишкою в полі')"></textarea></p>
+<b>onmouseover</b>
+<p><img src="mavpa.jpg" alt="логотип сайту"
+onmouseover="alert('Мишка наїхала на рисунок')"></p>
+<b>onmouseout</b>
+<p><img src="mavpa.jpg" alt="логотип сайту"
+onmouseover="alert('Мишка наїхала на рисунок')"
+onmouseout="alert('Мишка зїхала з рисунку')"></p>
+<b>onfocus</b>
+<p><input type="text" name="tx1" onfocus="alert('Поле в фокусі')"></p>
+<b>onblur</b>
+<p><input type="text" name="tx1" onfocus="alert('Поле в фокусі')" 
+onblur="alert('З поля знято фокус')"></p>
+<b>onchange</b>
+<p><select name="sl1" onchange="alert('Змінено вибраний пункт')">
+<option value="v1" selected="selected">значення 1 </option>
+<option value="v2">значення 2 </option>
+<option value="v3">значення 3 </option>
+</select></p>
+</body>
+</html>
