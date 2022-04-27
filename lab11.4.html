@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<title>Гіпертекстовий
+документ</title>
+<meta charset="utf-8">
+<link rel="stylesheet"
+href="style/base.css"><script>
+    function f10()
+    {var x, y,max;
+        x=11.56;
+        y=10;
+        if(x>y)
+            {max=x;}
+        else
+            {max=y;}
+    document.getElementById('zd10').innerHTML="max(x,y)="+max;}
+  function ff10()
+    {var x, y,max;
+        x=250.56;
+        y=10;
+        max=x;
+        if(max<y)
+            {max=y;}
+        document.getElementById('zd10').innerHTML="max(x,y)="+max;}
+    function f11()
+    {var x, y,max;
+        x=1;
+        y=10988987890;
+        z=608;
+        if((z>x)&&(z>y)) max=z;
+        if((y>x)&&(y>z)) max=y;
+       if((x>y)&&(x>z)) max=x;
+    document.getElementById('zd11').innerHTML="max(x,y,z)="+max;}
+     function ff11()
+    {var x, y,max;
+        x=57898765;
+        y=0;
+        z=608;
+        max=x;
+        if(max<y)          max=y;
+        if(max<z)          max=z;
+      
+    document.getElementById('zd11').innerHTML="max(x,y,z)="+max;}
+    function f3()
+    {var a, b, c,result;
+    a=100000000;
+    b=20;
+    c=15;
+    result="трикутник існує";
+    if(a>=c+b)  result="трикутник не існує";
+    if(b>=c+a)  result="трикутник не існує"; 
+    if(c>=b+a)  result="трикутник не існує";
+    document.getElementById('zd3').innerHTML="result="+result;}
+
+     function f4()
+    {var a, b, c,result;
+    a=47;
+    b=16;
+    c=16;
+    result="трикутник різносторонній";
+    if((a==b)&&(b==c))  result="трикутник рівносторонній";
+    else
+    if((a==b)||(b==c)||(c==a)) result="трикутник рівнобедрений";
+    
+    document.getElementById('zd4').innerHTML="result="+result;}
+
+    function f5()
+    {var a, b, c, d, max;
+    a=47;
+    b=78;
+    c=16;
+    d=45;
+                             max=d;
+        if(max<a)            max=a;
+        if(max<b)            max=b;
+        if(max<c)            max=c;
+    document.getElementById('zd5').innerHTML="max(a,b,c,d)="+max;}
+</script>
+</head>
+<body>
+<body bgcolor="#C9F">
+<div id="content" class="vidstup"><img src="p2.png" alt="Схема роботи оператора if" style="width:50%;">
+   <img src="p3.png" alt="Схема роботи оператора if" style="width:50%;">
+    <h1>Задача 1 Тема:розгалуження</h1>
+    <p>Даныдействительныечислах,у. Получить: а) max (x, y</p>
+    <h1 id="zd10"></h1>
+    <form>
+         <input type="button" value="Розв'язок задача 1" onclick="ff10()">
+    </form>
+
+    <h1>Задача 2 Тема:розгалуження</h1>
+    <p>Даныдействительныечислах,у. Получить: а) max (x, y, z</p>
+    <h1 id="zd11"></h1>
+    <form>
+         <input type="button" value="Розв'язок задача 2" onclick="ff11()">
+    </form>
+     <h1>Задача 3 Тема:розгалуження</h1>
+    <p>З'ясувати, чи існує трикутник з даними сторонами. Використати нерівність трикутника: довжина сторони трикутника менша від суми довжин двох інших сторін цього трикутника.
+    </p>
+      <h1 id="zd3"></h1>
+   <form>
+         <input type="button" value="Розв'язок задача 3" onclick="f3()">
+    </form>
+
+    <h1>Задача 4 Тема:розгалуження</h1>
+    <p>За відомими довжинами сторін трикутника визначити, яким буде трикутник: рівностороннім, рівнобедренним чи різностороннім.
+</p>
+      <h1 id="zd4"></h1>
+   <form>
+         <input type="button" value="Розв'язок задача 4" onclick="f4()">
+    </form>
+
+     <h1>Задача 5 Тема:розгалуження</h1>
+    <p>Знайти максимум серед 4 відомих чисел</p>
+      <h1 id="zd5"></h1>
+   <form>
+         <input type="button" value="Розв'язок задача 5" onclick="f5()">
+    </form>
+ </div>
+ </div>
+</div>
+</body>
+</html>
