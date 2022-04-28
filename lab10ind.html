@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Моя робота</title>
+
+
+  <style>
+h1 {
+	color: #0fff09;
+   } 
+ul {
+//list-style-image: url(https://webref.ru/assets/images/css/css_list-style-position_3.png);
+  //list-style-position: inside;
+}
+   .my_style {
+    //border-left-color: #fc0; /* Цвет линии слева */
+    border-left-style: solid; /* Стиль линии */
+    padding-left: 10px; /* Расстояние между линией и текстом */
+    border-top-color: #0fff09;
+   }
+  </style>
+
+
+
+
+ </head>
+<body>
+<div class="my_style"  id="MyDiv" ondblclick="alert('клікнули двічі мишкою в полі')">
+<p><input type="text" name="tx1" onfocus="alert('Поле в фокусі')" onblur="alert('З поля знято фокус')"></p>
+<h1>Моя робота</h1>
+
+<ul>
+<li><button type="button1"  onclick="background_Image()">Змінити фонову картинку</button></li><br>
+<li><button type="button2" onclick="border_left_color()">Змінити колір лівого контуру</button></li><br>
+<li><button type="button3" onclick="top_Style()">Додати стиль межі зверху елементу</button></li><br>
+<li><button type="button4" onclick="font_family()">Стиль шрифта</button></li><br>
+<li><button type="button5" onclick="list_style_position()">Змінити маркер</button></li><br>
+<li><button type="button6" onclick="padding_left()">Змінити значення поля від лівого краю</button></li>
+</ul><br><br>
+<button type="button" onclick="my_new()">Оновити</button>
+
+
+<script>
+    document.body.style.backgroundImage = "url('http://cdn26.us1.fansshare.com/photo/backgroundimage/iak-background-image-120854865.jpg')";
+
+function $() { 
+var elements = new Array(); 
+for (var i = 0; i < arguments.length; i++) 
+{ var element = arguments[i]; 
+if (typeof element == 'string') 
+element = document.getElementById(element); 
+if (arguments.length == 1) 
+return element; 
+elements.push(element); } 
+return elements; } ;
+
+
+function background_Image() {
+  
+    document.body.style.backgroundImage = "url('http://cdn30.us1.fansshare.com/image/backgroundimage/background-image-1168339495.jpg')";
+}
+function border_left_color() {
+ $('MyDiv').style.borderLeftColor = "#f1ff09";
+}
+function top_Style() {
+ $('MyDiv').style.borderTopStyle = "double";
+}
+function font_family() {
+ $('MyDiv').style.fontFamily = "Arial, Verdana, sans-serif";
+}
+function list_style_position() {
+ $('MyDiv').style.listStylePosition = "inside";
+}
+function padding_left() {
+ $('MyDiv').style.paddingLeft = "100px";
+}
+
+function my_new() {
+document.body.style.backgroundImage = "url('http://cdn26.us1.fansshare.com/photo/backgroundimage/iak-background-image-120854865.jpg')";
+$('MyDiv').style.borderLeftColor = "";
+$('MyDiv').style.borderTopStyle = "";
+$('MyDiv').style.fontFamily = "";
+$('MyDiv').style.listStylePosition = "";
+$('MyDiv').style.paddingLeft = "20px";
+}
+
+
+
+  </script>
+
+</div>
+</body>
+</html>
